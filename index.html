@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2</title>
+
+    <!--Enlazando los archivos css-->
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/cuerpo.css">
+
+    
+    <!--Enlazando los archivos js-->
+    <script type="text/javascript" src="js/nombre.js"></script>
+</head>
+<body>
+    <!--menu-->
+    <header>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-bar">
+            <!--<img src="img/menu.png" class="icon-menu" for="menu-bar">-->
+            <label class="icon-menu" for="menu-bar"><img src="img/menu.png" id="iconomenu"></label>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Galeria</a>
+                <a href="#">Cursos</a>
+                <a href="#">Dirección</a>
+                <a href="#">Contactos</a>
+                <a href="#">Quienes somos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="seccion">
+            <div class="division1">
+                <img src="img/imagen1.png" id="imagen1">
+            </div>
+            <div class="division2">
+                <div class="iniciarsesion">
+                    <p>INICIAR SESIÓN</p>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <br><br>
+                    <!--<button type="button" onclick="cancelarform()">INGRESAR</button>-->
+                    <button type="button" onclick="recibirdato()">INGRESAR</button>
+                </div>
+
+                <div class="usuario">
+                    <img src="img/usuario.png" id="imagenusuario">
+                    <input name="nombreusuario" id="nombreusuario" disabled>
+                    <!--<p name="nombreusuario" id="nombreusuario"></p>-->
+                </div>
+            </div>
+
+            <div class="division2">
+                <div class="texto1">
+                    <p class="primertexto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                </div>
+
+                <div class="calculadora">
+                    <p>CONVERSOR DE BOLIVIANOS A DOLARES</p><br>
+                    BOLIVIANOS:   <input type="text" name="boliviano" id="boliviano" required>
+                    <br><br>
+                    DOLARES:<input type="text" name="dolar" id="dolar" required>
+                    <br><br>
+                    <button type="button" onclick="conversor()">CONVERTIR</button>
+                </div>
+            </div>
+
+            <div class="division3">
+                
+                <p class="primertexto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+        </section>
+
+
+        <aside class="aside">
+            <div class="iconos">
+                <img src="img/usuario.png" class="imagenlink">
+                <a href="https://blogpersonaljuanmartinez.server2.trinchera.dev/"> Link de mi perfil <a> <br>
+                <img src="img/usuario.png" class="imagenlink">
+                <a href="http://finanzas.uab.edu.bo:9095/academico/login0101501.jsp?h_control=0&h_intranet=0"> Enlace directo 2 <a>
+            </div>
+
+            <div class="iconos">
+                <p class="primertexto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            </div>
+
+            <div class="imagenaside">
+                <img src="img/imagen1.png" id="imgaside">
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
